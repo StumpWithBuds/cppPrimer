@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Cpp Primer 学习
 
 ## 简介
@@ -49,7 +48,5 @@ c++代码，名字形如p40.cpp表示对应书40页处的代码。
 ## 参与贡献
 
 本仓库是在原作者applenob的基础上添加我自己在读Cpp Primer的代码笔记而成的，仅个人学习使用，再次向applenob和其他参与了原仓库贡献的人表示感谢。
-=======
-# cppPrimer
-codes in the book and solutions to exercises
->>>>>>> e5d5651045d10c3b81949ccd56145a70de060e76
+
+# 
