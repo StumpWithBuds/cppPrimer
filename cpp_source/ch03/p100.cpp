@@ -7,9 +7,9 @@ using std::endl;
 using std::string;
 using std::vector;
 
-vector<string> vs = {"1", "2", "3", "4", "5", "6","7"};
+const vector<string> vs = {"1", "2", "3", "4", "5", "6","7"};
 
-vector<string>::iterator biSearch (vector<string> &text, string sought){
+auto biSearch (const vector<string> &text, string sought){
     auto beg = text.begin();
     auto end = text.end();
     auto mid = text.begin() + (end - beg) / 2;
@@ -27,7 +27,7 @@ vector<string>::iterator biSearch (vector<string> &text, string sought){
 } 
 
 int main(){
-    string sought = "6";
+    string sought = "1";
     auto iter = biSearch(vs,sought);
     cout << *iter << endl;
     return 0;
