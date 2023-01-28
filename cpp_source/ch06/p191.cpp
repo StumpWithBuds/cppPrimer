@@ -3,10 +3,12 @@
 */
 
 #include <iostream>
+#include <string>
 
 using std::cin;
 using std::cout;
 using std::endl;
+using std::string;
 
 void reset(int &i); // 函数的声明，因为函数的定义在main函数的后面
 void resetPtr(int *p); //函数的声明，因为函数的定义在main函数的后面
@@ -14,6 +16,8 @@ int main(){
     int i = 10;
     const int ci = i;
     const int &iRef = i;
+    const  string &stringRef = "sting";
+    //string &stringRef2 = "sting"; //buggy
     // int &ref = ci; //buggy
     // int &ref = 85; //buggy
 
@@ -21,6 +25,7 @@ int main(){
     // reset(i);
     // reset(ci); // buggy ,same as "int &ref = ci";
     cout << "i: " << i << endl;
+    cout << "string ref: " << stringRef << endl;
     return 0;
 }
 
