@@ -40,12 +40,22 @@ public:
         return *this;
     }
 
-    double net_price(std::size_t n) const override;
-    void  debug() const override;
+    double net_price(std::size_t n) const override {return 2.2;};
+    void  debug() const override {
+        //To do
+    };
 
     ~Bulk_quote() override
     {
         std::cout << "destructing Bulk_quote\n";
+    }
+
+    Bulk_quote* clone() const & {
+        return new Bulk_quote(*this);
+    }
+
+    Bulk_quote* clone() && {
+        return new Bulk_quote(std::move(*this));
     }
 };
 

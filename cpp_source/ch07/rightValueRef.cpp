@@ -4,18 +4,18 @@
 #include <iostream>
 
 class Buffer {
-    public:
-        Buffer() {
-            buf = (char*) malloc(100);
-        }
+public:
+    Buffer() {
+        buf = (char*) malloc(100);
+    }
 
-        ~Buffer() {
-            if(buf != nullptr)
-                free(buf);
-                buf = nullptr;
-        }
+    ~Buffer() {
+        if(buf != nullptr)
+            free(buf);
+            buf = nullptr;
+    }
 
-        char *buf = nullptr;
+    char *buf = nullptr;
 };
 
 Buffer getBuffer() {

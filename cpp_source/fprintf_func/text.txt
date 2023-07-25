@@ -1,0 +1,1 @@
+D:\Cpp_Primer_Practice\cpp_source\fprintf_func\fp.cpp:12: expect: 1 actual: 2
